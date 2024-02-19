@@ -24,9 +24,12 @@ int main()
     printf("%-20s %-25s %4d\n", "Nikola", "Nikolic", 2007);
     // pokazivac na string
     char* mar = "Citroen";
+    char* mod;//null
+    printf("Model: \n");
+    //scanf("%s", mod);// nije dozvoljeno
+    mod = calloc(25, sizeof(char));
+    scanf("%s", mod);
     printf("Marka %s\n", mar);
-    char* mod;
-    mod = "C5";// dozvoljeno
     printf("Model %s\n", mod);
     //ime = "Marko";// ne moze
 }
